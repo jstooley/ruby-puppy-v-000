@@ -5,9 +5,12 @@ class Dog
     @name = name
     @@all << self
   end
-  def self.all 
+  def self.all
     @@all.each do |dog|
       puts "#{dog}"
     end
+  end
+  def clear_all
+    @all
   end
 end
